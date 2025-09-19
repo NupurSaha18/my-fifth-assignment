@@ -1,9 +1,9 @@
 // clicking on the heart icon
 let count = 0;
-const clickHeart = document.getElementsByClassName("click-heart");
+const clickHearts = document.getElementsByClassName("click-heart");
 const countHeart = document.getElementById("count-heart");
-for (let i = 0; i < clickHeart.length; i++) {
-  clickHeart[i].addEventListener("click", function () {
+for (const clickHeart of clickHearts) {
+  clickHeart.addEventListener("click", function () {
     count++;
     countHeart.innerText = count;
   });
@@ -31,7 +31,7 @@ for (const callBtn of callButtons) {
     // show alert for clicking call btn
     const showTitle = callBtn.parentNode.parentNode.children[0].innerText;
     const showNumber = callBtn.parentNode.parentNode.children[2].innerText;
-    alert(showTitle + "-" + showNumber);
+    alert("Dialed " + showTitle + "-" + showNumber);
     // history will be added for clicking call btn
     // for current time
     let now = new Date();
@@ -54,4 +54,26 @@ for (const callBtn of callButtons) {
   });
 }
 
+// click call history's clear btn
+document.getElementById("clear-btn").addEventListener("click", function () {
+  document.getElementById("history-container").innerHTML = "";
+});
 
+// clicking on the copy btn
+let copyCount = 0;
+const clickCopyBtn = document.getElementsByClassName("copy-btn");
+const countCopy = document.getElementById("count-copy");
+for (const clickCopy of clickCopyBtn) {
+  clickCopy.addEventListener("click", function () {
+    copyCount++;
+    countCopy.innerText = copyCount;
+
+    // copy in clipboard
+    const showNumber = clickCopy.parentNode.parentNode.children[2].innerText;
+    navigator.clipboard.writeText(showNumber).then(function () {
+      alert(`Copied to clipboard ${showNumber}`);
+    });
+
+    // console.log(showNumber)
+  });
+}
