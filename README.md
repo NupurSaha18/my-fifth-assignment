@@ -2,12 +2,15 @@
 Ans :   
 getElementById : It finds a element in DOM by its Id. Returns a single element and        
 Syntax is : document.getElementById('íd-name')
+
 getElementsByClassName : It find elements in DOM by className. Returns a html collection,
 which is  an array like object.
 Syntax is : document.getElementsByClassName('class-name')
+
 querySelector : It finds the element in DOM by CSS selector. And returns only the first 
 element that matches the CSS selector.
 Syntax is : document.querySelector('.call-btn')
+
 querySelectorAll : It also find elements in DOM by CSS selector but returns all the matches          elements as a node list.
 Syntax is : document.querySelectorAll('.call-btn)
 
