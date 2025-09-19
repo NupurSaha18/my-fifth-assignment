@@ -40,12 +40,12 @@
             class="flex items-center gap-2 px-8 py-2 rounded-[50px] bg-[#41ff6b1a]"
           >
             <p id="count-heart" class="font-bold">0</p>
-            <img  class="w-5" src="./assets/heart.png" alt="" />
+            <img class="w-5" src="./assets/heart.png" alt="" />
           </div>
           <div
             class="flex items-center gap-2 px-5 py-2 rounded-[50px] bg-[#41ff6b1a]"
           >
-            <p class="font-bold">100</p>
+            <p id="total-coin" class="font-bold">100</p>
             <img class="w-5" src="./assets/coin.png" alt="" />
           </div>
           <button class="btn bg-[#00a63e] rounded-[50px] p-5 text-white">
@@ -93,7 +93,8 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -123,7 +124,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -153,7 +154,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -183,7 +184,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -213,7 +214,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -243,7 +244,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -275,7 +276,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -305,7 +306,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -320,7 +321,7 @@
                   src="./assets/Bangladesh-Railway.png"
                   alt=""
                 />
-                <i class="fa-regular fa-heart   click-heart"></i>
+                <i class="fa-regular fa-heart click-heart"></i>
               </figure>
               <div class="card-body">
                 <h2 class="card-title font-bold">
@@ -337,7 +338,7 @@
                     Copy
                   </div>
                   <div
-                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px]"
+                    class="badge bg-[#00a63e] text-white roboto-font p-[16px] w-[180px] call-btn"
                   >
                     <i class="fa-solid fa-phone"></i>
                     Call
@@ -359,10 +360,13 @@
                 Clear
               </button>
             </div>
+            <!-- new history log will append in this div -->
+            <div id="history-container"></div>
           </div>
         </div>
       </section>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
